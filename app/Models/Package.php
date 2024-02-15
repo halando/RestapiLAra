@@ -7,9 +7,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Package extends Model
 {
-    use HasFactory;
-
-    public function drink(){
-        return $this->hasMany(Drink::class);
-    }
+   
 }

@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\DrinkController;
+use App\Http\Controllers\Api\PackageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,3 +25,12 @@ Route::get("/onedrink",[DrinkController::class,"getOneDrink"]);
 Route::post("/newdrink",[DrinkController::class,"addDrink"]);
 Route::put("/modifydrink",[DrinkController::class,"modifyDrink"]);
 Route::delete("/destroy",[DrinkController::class,"destroyDrink"]);
+Route::get("/package",[PackageController::class,"packageDrink"]);
+
+
+Route::get("/packages",[PackageController::class,"getPackages"]);
+Route::get("/types",[TypeController::class,"getTypes"]);
+Route::post("/newtype",[PackageController::class,"addDrink"]);
+Route::put("/modifydrink",[TypeController::class,"modifyDrink"]);
+Route::delete("/destroy",[TypeController::class,"destroyDrink"]);
+Route::get("/package",[PackageController::class,"packageDrink"]);

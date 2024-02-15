@@ -9,6 +9,6 @@ class Type extends Model
 {
     use HasFactory;
     public function drink(){
-        return $this->hasMany(Drink::class);
+      
     }
 }
